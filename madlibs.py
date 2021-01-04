@@ -27,7 +27,7 @@ else:
     noun2=input('Enter a noun (plural):')
     verb4=input('Enter a verb(-ing):')
     noun3=input('Enter a noun:')
-    print("It was a {},cold november day.I woke up to the {} smell of {} roasting in the {} downstairs.I {} down the stairs to see if i could help {} the dinner.My mom said 'see if  {} needs a fresh {}.'so i carried a tray of glasses full of {} into the {} room.When i got there i could'nt belive my {}! There were {} {} on the {}!".format(adj1,adj2,bird,room,verb1,verb2,relative,noun1,liquid,verb3,part,noun2,verb4,nsoun3))
+    print("It was a {},cold november day.I woke up to the {} smell of {} roasting in the {} downstairs.I {} down the stairs to see if i could help {} the dinner.My mom said 'see if  {} needs a fresh {}.'so i carried a tray of glasses full of {} into the {} room.When i got there i could'nt belive my {}! There were {} {} on the {}!".format(adj1,adj2,bird,room,verb1,verb2,relative,noun1,liquid,verb3,part,noun2,verb4,noun3))
 
 
 
