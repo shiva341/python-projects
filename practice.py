@@ -13,16 +13,8 @@ def disable():
     b7.config(state=DISABLED)
     b8.config(state=DISABLED)
     b9.config(state=DISABLED)
-def reset_button():
-    b1.config(text='',state=NORMAL,fg='white',bg='black')
-    b2.config(text='',state=NORMAL,fg='white',bg='black')
-    b3.config(text='',state=NORMAL,fg='white',bg='black')
-    b4.config(text='',state=NORMAL,fg='white',bg='black')
-    b5.config(text='',state=NORMAL,fg='white',bg='black')
-    b6.config(text='',state=NORMAL,fg='white',bg='black')
-    b7.config(text='',state=NORMAL,fg='white',bg='black')
-    b8.config(text='',state=NORMAL,fg='white',bg='black')
-    b9.config(text='',state=NORMAL,fg='white',bg='black')
+
+
         
     
 
@@ -67,6 +59,30 @@ def entering(b):
     elif count==9:
         messagebox.showinfo('winner','Its a Tie! ')
         disable()
+def reset_button():
+    global b1,b2,b3,b4,b5,b6,b7,b8,b9
+    global player_turn,count
+    player_turn=0
+    count=0
+    b1=Button(window,text='',command=lambda: entering(b1),fg='white',bg='black',height=6,width=12)
+    b2=Button(window,text='',command=lambda: entering(b2),fg='white',bg='black',height=6,width=12)
+    b3=Button(window,text='',command=lambda: entering(b3),fg='white',bg='black',height=6,width=12)
+    b4=Button(window,text='',command=lambda: entering(b4),fg='white',bg='black',height=6,width=12)
+    b5=Button(window,text='',command=lambda: entering(b5),fg='white',bg='black',height=6,width=12)
+    b6=Button(window,text='',command=lambda: entering(b6),fg='white',bg='black',height=6,width=12)
+    b7=Button(window,text='',command=lambda: entering(b7),fg='white',bg='black',height=6,width=12)
+    b8=Button(window,text='',command=lambda: entering(b8),fg='white',bg='black',height=6,width=12)
+    b9=Button(window,text='',command=lambda: entering(b9),fg='white',bg='black',height=6,width=12)
+
+    b1.grid(row=0,column=0)
+    b2.grid(row=0,column=1)
+    b3.grid(row=0,column=2)
+    b4.grid(row=1,column=0)
+    b5.grid(row=1,column=1)
+    b6.grid(row=1,column=2)
+    b7.grid(row=2,column=0)
+    b8.grid(row=2,column=1)
+    b9.grid(row=2,column=2)        
 
            
 
@@ -77,6 +93,7 @@ def entering(b):
     
 
 window=Tk()
+
 b1=Button(window,text='',command=lambda: entering(b1),fg='white',bg='black',height=6,width=12)
 b2=Button(window,text='',command=lambda: entering(b2),fg='white',bg='black',height=6,width=12)
 b3=Button(window,text='',command=lambda: entering(b3),fg='white',bg='black',height=6,width=12)
@@ -97,6 +114,7 @@ b6.grid(row=1,column=2)
 b7.grid(row=2,column=0)
 b8.grid(row=2,column=1)
 b9.grid(row=2,column=2)
+
 
 
 
