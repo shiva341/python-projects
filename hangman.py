@@ -1,6 +1,6 @@
 from PyDictionary import PyDictionary
 import random 
-words=open('C:/Users/R.R.6.12.20/Desktop/wordlist.10000.txt','r')
+words=open('wordlist.10000.txt','r')
 list_of_words=words.read().split('\n')
 game_word=random.choice(list_of_words)
 game_word=game_word.lower()
